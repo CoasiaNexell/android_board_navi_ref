@@ -43,7 +43,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_COPY_FILES += \
 	frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
-	device/nexell/navi_ref/media_codecs.xml:system/etc/media_codecs.xml \
 	device/nexell/navi_ref/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
 	device/nexell/navi_ref/media_profiles.xml:system/etc/media_profiles.xml \
 	frameworks/native/data/etc/android.hardware.camera.xml:system/etc/permissions/android.hardware.camera.xml
@@ -184,6 +183,11 @@ PRODUCT_PACKAGES += \
 # stagefright FFMPEG compnents
 ifeq ($(EN_FFMPEG_AUDIO_DEC),true)
 PRODUCT_PACKAGES += libNX_OMX_AUDIO_DECODER_FFMPEG
+PRODUCT_COPY_FILES += \
+	device/nexell/navi_ref/media_codecs_ffmpeg.xml:system/etc/media_codecs.xml
+else
+PRODUCT_COPY_FILES += \
+	device/nexell/navi_ref/media_codecs.xml:system/etc/media_codecs.xml
 endif
 
 ifeq ($(EN_FFMPEG_EXTRACTOR),true)
