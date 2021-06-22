@@ -54,7 +54,7 @@ DEV_PORTNUM := 0
 # UBOOT Setting
 SOC_NAME := s5p4418
 TARGET_UBOOT_ARCH := arm
-UBOOT_CONFIG := s5p4418_navi_ref_config
+UBOOT_CONFIG := s5p4418_navi_ref_pie_config
 TARGET_UBOOT_SRC := vendor/nexell/u-boot/u-boot-2016.01
 SECURE_BINGEN := vendor/nexell/tools/SECURE_BINGEN
 
