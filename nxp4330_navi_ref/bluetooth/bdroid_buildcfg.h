@@ -19,12 +19,12 @@
 
 #define BTA_DISABLE_DELAY 100 /* in milliseconds */
 
-#define BTM_WBS_INCLUDED TRUE
+// Wide-band speech support
 #define BTIF_HF_WBS_PREFERRED TRUE
 
 #define BTA_DM_COD {0x20, 0x04, 0x08}
 
-#define BTA_AV_SINK_INCLUDED TRUE
-#define USE_AUDIO_TRACK TRUE
+// Google VSC spec support
+#define BLE_VND_INCLUDED TRUE
 
 #endif
