@@ -35,8 +35,8 @@ BOARD_PREBUILT_DTBOIMAGE := out/target/product/nxp4330_navi_ref/dtbo_navi_ref.im
 
 BOARD_VENDOR_KERNEL_MODULES += \
 	$(KERNEL_OUT)/drivers/usb/gadget/function/usb_f_iap.ko \
-	$(KERNEL_OUT)/drivers/usb/gadget/legacy/g_iap_ncm.ko \
-	$(KERNEL_OUT)/drivers/net/wireless/realtek/rtl8188eus/wlan.ko
+	$(KERNEL_OUT)/drivers/usb/gadget/legacy/g_iap_ncm.ko
+
 
 # BL1 Setting
 CHIPNAME := nxp4330
